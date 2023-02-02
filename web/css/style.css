@@ -1,0 +1,780 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400&display=swap");
+
+@font-face {
+    font-family: "FakeReceipt";
+    src: url("../font/FAKERECE.ttf");
+}
+
+body {
+    background: #F5F2E9;
+    margin: 0px;
+}
+
+#logo {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+#logo p {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    margin: 0px 0px -15px;
+}
+
+#logo p sup {
+    font-size: 17px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+nav div {
+    display: flex;
+    flex-direction: row;
+}
+
+nav li {
+    list-style-type: none;
+    transition: 0.5s linear all;
+}
+
+nav li a {
+    color: black;
+}
+
+nav li:hover {
+    transition: 0.5s linear all;
+    background: black;
+}
+
+nav li:hover a, nav li:hover svg {
+    color: #F5F2E9;
+}
+
+nav ul {
+    padding: 23px 0px;
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    height: 100%;
+}
+
+nav ul li {
+    margin-right: 20px;
+    margin-left: 20px;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+nav #icons li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 67px;
+    width: 67px;
+    border-left: 1px solid black;
+}
+
+nav #icons li a,p {
+    display: block;
+}
+
+nav #icons li a svg {
+    height: 35px;
+    width: 35px;
+}
+
+nav #icons li p svg {
+    height: 35px;
+    width: 35px;
+}
+
+#hero {
+    width: 90%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 50px;
+}
+
+#hero #slider {
+    height: 40vh;
+    margin-right: 50px;
+    position: relative;
+    z-index: 100000;
+}
+
+#hero #slider ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+#hero #slider ul li {
+    list-style-type: none;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    border-left: 1px solid #7f7f7f;
+}
+
+#hero #slider ul li p {
+    margin: 0px;
+    color: #7f7f7f;
+    font-family: "FakeReceipt", sans-serif;
+    font-size: 20px;
+}
+
+#hero #slider ul .activated {
+    border-left: 1px solid black;
+}
+
+#hero #slider ul .activated p {
+    color: black;
+}
+
+#hero main {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+}
+
+#hero main #description {
+    position: relative;
+    z-index: 2;
+    width: 40%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#hero main #description h1 {
+    margin: 0px;
+    font-family: "FakeReceipt", serif;
+    font-size: 80px;
+    font-weight: bolder;
+    line-height: 0.9;
+}
+
+#hero main #description h2, #hero main #description h3 {
+    margin: 0px;
+    font-family: "Be Vietnam Pro", serif;
+    font-weight: normal;
+}
+
+#hero main #description h2 {
+    font-size: 30px;
+}
+
+#hero main #description h3 {
+    font-size: 20px;
+}
+
+#hero main #description p {
+    font-size: 20px;
+    font-family: "Be Vietnam Pro", sans-serif;
+    color: #7f7f7f;
+    font-weight: 300;
+    margin: 0px;
+}
+
+#hero main #image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+#hero main #image img {
+    margin: -150px 0px 0px -150px;
+
+}
+
+#hero aside {
+    width: 20%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+#hero aside h2 {
+    position: relative;
+    z-index: 2;
+    left: -10px;
+    margin: 0px;
+    padding: 0px;
+    font-family: "FakeReceipt", sans-serif;
+}
+
+#hero aside img {
+    position: relative;
+    z-index: 1;
+    top: -10px;
+    height:30%;
+    width: max-content;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: block;
+    width: fit-content;
+    margin-top: 10px;
+    padding: 10px 50px;
+    color: #F5F2E9;
+    background: #7f7f7f;
+    font-family: "Be Vietnam Pro", sans-serif;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s all linear;
+}
+
+.btn:hover {
+    color: #7f7f7f;
+    background: #F5F2E9;
+    border: 1px #7f7f7f solid;
+    transition: 0.5s all linear;
+}
+
+#feed {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#feed div {
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    border-right: solid 1px black;
+    box-sizing: border-box;
+    width: 25%;
+}
+
+#feed div img {
+    width: 100%;
+    border-bottom: solid 1px black;
+}
+
+#feed div .legend {
+    width: 100%;
+    border: 0px;
+    padding: 10px;
+
+}
+
+#feed div .legend p {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 14px;
+    margin: 0px;
+    text-transform: uppercase;
+
+}
+
+footer {
+    background: black;
+    color: #F5F2E9;
+    width: 100%;
+    padding: 10px 0 100px;
+}
+
+footer p {
+    font-family: "Be Vietnam Pro", sans-serif;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+footer a {
+    color: #F5F2E9;
+}
+
+footer a:hover {
+    color: #7f7f7f;
+}
+
+#connection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+#connection form{
+    width:80%;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+
+#connection form legend{
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: "Space Grotesk", sans-serif;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    font-height: 40px;
+}
+
+#connection hr{
+    margin-bottom: 20px;
+    background: #7f7f7f;
+    width: 100%;
+}
+
+#connection form fieldset{
+    border: 0px solid wheat;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#connection form fieldset input[type="text"],
+#connection form fieldset input[type="email"],
+#connection form fieldset input[type="tel"],
+#connection form fieldset input[type="password"],
+#connection form fieldset input[type="number"]{
+    border: 1px solid #7f7f7f;
+    border-radius: 1px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 1em;
+    background: transparent;
+}
+
+#connection form fieldset input[type="submit"]{
+    border: 1px solid #7f7f7f;
+    border-radius: 1px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 1em;
+    background: #7f7f7f;
+    color: #F5F2E9;
+
+}
+
+#connection form fieldset input[type="submit"]:hover{
+    background: #F5F2E9;
+    color: #7f7f7f;
+}
+
+.flash{
+    width: 100%;
+    text-align: center;
+    background: #ff5959;
+    color: #F5F2E9;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 1em;
+}
+
+#cart{
+    display: flex;
+    position: fixed;
+    top:0px;
+    flex-direction: column;
+    z-index: 10;
+    width:100%;
+    align-items: flex-end;
+}
+
+#cart-container{
+    overflow-y: scroll;
+    background-color: #F5F2E9;
+    width:30%;
+    border-left : 1px solid black;
+    height:100vh;
+
+}
+#cart-container #content-cart{
+    border-top:1px solid black;
+}
+
+#cart-container .contain{
+    padding-left:20px;
+    padding-right:20px;
+}
+#cart-container img:first-of-type{
+    width:100%;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+}
+
+#empty-cart{
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+#empty-cart a{
+    color: #7f7f7f;
+}
+
+#header-cart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    position: fixed;
+    background: rgb(245, 242, 233);
+    width: inherit;
+    border-bottom: 1px solid black;
+}
+
+#header-cart + div{
+    margin-top: 100px;
+}
+
+#header-cart svg{
+    height:32px;
+    width:32px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+#header-cart div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#header-cart div h2{
+
+    font-family: 'Space Grotesk', serif;
+}
+
+#legend h3{
+    font-family: "Space Grotesk", sans-serif;
+}
+
+#legend div div p{
+    font-family: "Be Vietnam Pro", sans-serif;
+    margin:0px;
+    margin-bottom: 10px;
+}
+
+#legend div div:nth-of-type(2){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#legend div span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#summary div p{
+    font-family: "FakeReceipt",sans-serif;
+    font-size: 1.5em;
+    margin:0;
+    margin-bottom: 5px;
+}
+#summary div{
+    margin-bottom:20px;
+}
+
+#summary a{
+    display: block;
+    text-align: center;
+    padding: 5px 60px;
+    margin-bottom: 10px;
+    font-family: "FakeReceipt", sans-serif;
+    background-color: #404040;
+    color:#F5F2E9;
+    text-decoration: none;
+}
+
+#summary a:nth-of-type(2n+1){
+    background-color: #404040;
+    color:#F5F2E9;
+}
+#summary a:nth-of-type(2n){
+    background-color: transparent;
+    color:#404040;
+    border: 1px solid #404040;
+}
+.hide{
+    display: none !important;
+}
+
+nav #icons li form{
+    display: none;
+}
+
+nav #icons li form input{
+    margin-left:20px;
+    background:transparent;
+    border : 0px black solid;
+    border-bottom: 1px rgba(255, 255, 255, 0.77) solid;
+    color : rgba(255, 255, 255, 0.77);
+    font-family:"Space Grotesk",sans-serif ;
+
+}
+
+nav #icons .activated{
+    background: black;
+    color:#F5F2E9 ;
+    width:fit-content;
+
+}
+nav #icons .activated form{
+    display: block;
+}
+nav #icons .activated a svg{
+    color:#F5F2E9;
+}
+
+nav #icons .activated a {
+    color:#F5F2E9;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+nav #icons #suggestions{
+    display: none;
+}
+
+nav #icons #searchbar.activated{
+    justify-content: left;
+}
+
+nav #icons .activated #suggestions{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 70px;
+    width: fit-content;
+    background: black;
+    color: #F5F2E9;
+    z-index: 10;
+}
+
+nav #icons .activated #suggestions ol{
+    width: auto;
+    margin: 0px;
+    padding:0px;
+}
+nav #icons .activated #suggestions li{
+    width: auto;
+    margin: 0px;
+    padding-top:0px;
+    padding-bottom:0px;
+    padding-left:20px;
+    padding-right:20px;
+    font-family: "Be Vietnam Pro", sans-serif;
+    border-bottom: #F5F2E9 1px solid;
+    justify-content: left;
+}
+
+#product{
+    display: flex;
+    width:100%;
+    height: 100%;
+    flex-direction: row;
+    border-bottom: 1px solid black;
+}
+
+#product img{
+    border-right:1px solid black;
+    height:70vh;
+
+}
+
+#details{
+    width:100%;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+#details #title{
+    display: flex;
+    width:100%;
+    flex-direction:row;
+    align-items: flex-end;
+
+}
+
+#details #title h2{
+    font-family: "Be Vietnam Pro", sans-serif;
+    -webkit-text-stroke: 1px;
+    font-size: 3em;
+    margin: 0px;
+}
+
+#details #title p{
+    font-family: "FakeReceipt",sans-serif;
+    font-size: 1.5em;
+    margin: 0px 0px 5px 10px;
+}
+
+#header-details p{
+    font-family: "FakeReceipt", sans-serif;
+    font-size: 1.5em;
+    margin:0;
+}
+#details p{
+    font-family: "Be Vietnam Pro", serif;
+}
+
+#details #grid-size{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#details #grid-size .size-btn{
+    background: transparent;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: solid 1px black;
+    transition: 0.2s linear all;
+}
+
+.btnpages{
+    background: transparent;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: solid 1px black;
+    transition: 0.2s linear all;
+    border-radius: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.btnpages a{
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.btnpages:hover{
+    background: black;
+    color:#F5F2E9;
+    transition: 0.2s linear backgrond,color;
+}
+
+.btnpages:hover a{
+    color:#F5F2E9;
+    transition: 0.2s linear backgrond,color;
+}
+
+#details #grid-size .size-btn:hover{
+    background: black;
+    color:#F5F2E9;
+    transition: 0.2s linear backgrond,color;
+}
+
+#details #grid-size .disabled{
+    opacity: 0.5;
+}
+
+#details #grid-size .selected{
+    background: black;
+    color: #F5F2E9;
+}
+
+#details a, input[type="submit"]{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width:90%;
+    text-align: center;
+    border: 1px solid black;
+    margin-top:20px;
+    font-family: "Space Grotesk", sans-serif;
+    color: black;
+    text-decoration: none;
+    transition: 0.2s linear backgrond,color;
+    background: transparent;
+
+}
+
+#details a svg{
+    margin-left: 10px;
+}
+
+#details a, input[type="submit"]:hover{
+    background: black;
+    color: #F5F2E9;
+    transition: 0.2s linear backgrond, color;
+
+}
+
+#pay{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#pay h2{
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 2em;
+    margin: 0px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+#pay table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#pay table td{
+    padding: 10px;
+    border: 1px solid black;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+#pay table td:nth-of-type(1){
+    width: 50%;
+}
+
+#pay table th{
+    padding: 10px;
+    border: 1px solid black;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: normal;
+    color:#F5F2E9;
+    background: black;
+}
+
+
+/*# sourceMappingURL=style.css.map */
